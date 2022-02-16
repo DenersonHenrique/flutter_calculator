@@ -1,5 +1,6 @@
+import '../models/memory_model.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_calculator/app/models/memory_model.dart';
+import 'package:flutter/services.dart';
 import '../widgets/display_widget.dart';
 import '../widgets/keyboard_widget.dart';
 
@@ -21,6 +22,10 @@ class _CalculatorPageState extends State<CalculatorPage> {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+    ]);
+
     return Column(
       children: <Widget>[
         DisplayWidget(

@@ -50,7 +50,7 @@ class KeyboardWidget extends StatelessWidget {
                 callback: callback,
               ),
               ButtonWidget.operation(
-                text: 'X',
+                text: 'x',
                 callback: callback,
               ),
             ],
