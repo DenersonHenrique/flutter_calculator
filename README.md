@@ -25,8 +25,6 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Reference of study and create.
 
-- ## Reference of study and create.
-
 - [APP Flutter - Sua PRIMEIRA App COMPLETA](https://www.youtube.com/watch?v=jyjdXFsQoYw&ab_channel=Cod3rCursos)
 - [Aprenda Flutter e Desenvolva Apps Para Android e IOS 2021](https://www.udemy.com/course/curso-flutter/)
 
