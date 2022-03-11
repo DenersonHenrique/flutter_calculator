@@ -10,6 +10,10 @@ Calculator app with iOS interface design.
 
 A calculator app using Flutter. This calculator have a iOS calculator interface.
 
+## Screenshots
+
+![Screenshot_20220311193411](https://user-images.githubusercontent.com/18372798/157983833-12066440-4bae-4e24-9672-8e434d5e8f22.jpg)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
@@ -24,8 +28,6 @@ For help getting started with Flutter, view our
 samples, guidance on mobile development, and a full API reference.
 
 ## Reference of study and create.
-
-- ## Reference of study and create.
 
 - [APP Flutter - Sua PRIMEIRA App COMPLETA](https://www.youtube.com/watch?v=jyjdXFsQoYw&ab_channel=Cod3rCursos)
 - [Aprenda Flutter e Desenvolva Apps Para Android e IOS 2021](https://www.udemy.com/course/curso-flutter/)
