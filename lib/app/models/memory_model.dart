@@ -6,8 +6,11 @@ class MemoryModel {
   String _value = '0';
   bool _wipeValue = false;
   String? _lastCommand;
+  bool _setIndex = true;
 
   String get value => _value;
+  bool isEqualSign(String operation) => operation == '=';
+  bool validOperationBuffer() => _setIndex = _buffer[1] != 0;
 
   void applyCommand(String command) {
     if (_isReplacingOperation(command)) {
@@ -27,9 +30,8 @@ class MemoryModel {
   }
 
   _setOperation(String newOperation) {
-    bool isEqualSign = newOperation == '=';
     if (_bufferIndex == 0) {
-      if (!isEqualSign) {
+      if (!isEqualSign(newOperation)) {
         _operation = newOperation;
         _bufferIndex = 1;
         _wipeValue = true;
@@ -40,8 +42,9 @@ class MemoryModel {
       _value = _buffer[0].toString();
       _value = _value.endsWith('.0') ? _value.split('.')[0] : _value;
 
-      _operation = isEqualSign ? null : newOperation;
-      _bufferIndex = isEqualSign ? 0 : 1;
+      _operation = isEqualSign(newOperation) ? null : newOperation;
+      _bufferIndex = isEqualSign(newOperation) && _setIndex ? 0 : 1;
+      _setIndex = true;
     }
     _wipeValue = true; //!isEqualSign;
   }
@@ -65,7 +68,7 @@ class MemoryModel {
   _calculate() {
     switch (_operation) {
       case '%':
-        return _buffer[0] % _buffer[1];
+        return validOperationBuffer() ? _buffer[0] % _buffer[1] : _buffer[0];
       case '/':
         return _buffer[0] / _buffer[1];
       case 'x':

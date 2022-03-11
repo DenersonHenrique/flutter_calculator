@@ -10,6 +10,11 @@ Calculator app with iOS interface design.
 
 A calculator app using Flutter. This calculator have a iOS calculator interface.
 
+## Screenshots
+
+<img src="https://user-images.githubusercontent.com/18372798/157983833-12066440-4bae-4e24-9672-8e434d5e8f22.jpg"
+width="350" height="777">
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
